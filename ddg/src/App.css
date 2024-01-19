@@ -9,10 +9,27 @@
 
 .main {
   background-color: #f7f7f7;
+  flex: 1;
 }
 
 .dropdown-icon {
   color:#aaa
+}
+
+.download-button {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #333;
+  display: inline-block;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0 0 0 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+  white-space: nowrap;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  cursor: pointer;
 }
 
 .hamburger-icon {
@@ -84,6 +101,7 @@
 }
 
 .search-button {
+  text-align: center;
   border-radius: 0 4px 4px 0;
   display: inline-flex;
   min-width: 26px;
@@ -116,11 +134,17 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.privacy-text {
+  font-size: 14.4px;
+  color: #888;
+}
+
+body{
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+}
+
+footer{
+  margin-top: auto;
 }

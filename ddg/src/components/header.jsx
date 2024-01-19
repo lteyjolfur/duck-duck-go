@@ -4,10 +4,11 @@ import {Dropdown} from './dropdown'
 import { FaBullhorn } from "react-icons/fa"; 
 
 const Header = () => {
-    const a123 = 0
     return (
         <div className="header">
-            <Dropdown><FaBullhorn/></Dropdown>
+            <Dropdown>
+              <FaBullhorn/>
+            </Dropdown>
             <HamburgerPanel></HamburgerPanel>
         </div>
     )
