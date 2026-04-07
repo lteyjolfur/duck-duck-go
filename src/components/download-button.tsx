@@ -1,8 +1,8 @@
-import { getDownloadText } from "../lib/download";
+import { getDownloadText } from '../lib/download';
 
 const DownloadButton = () => {
   return (
-    <a className="download-button" href="/">
+    <button className="download-button" name="download-button">
       <svg
         viewBox="0 0 16 16"
         fill="none"
@@ -17,8 +17,8 @@ const DownloadButton = () => {
           fill="currentColor"
         ></path>
       </svg>
-      Download DuckDuckGo for {getDownloadText() ?? "your device"}
-    </a>
+      Download DuckDuckGo for {getDownloadText() ?? 'your device'}
+    </button>
   );
 };
 
