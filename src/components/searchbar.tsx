@@ -1,4 +1,4 @@
-import { GoSearch } from "react-icons/go";
+import { GoSearch } from 'react-icons/go';
 
 const Searchbar = () => {
   return (
@@ -7,15 +7,23 @@ const Searchbar = () => {
         className="search-form"
         action="https://www.duckduckgo.com/"
         method="get"
+        role="search"
+        aria-label="Site search"
       >
         <input
+          id="search-input"
           className="search-input"
           type="text"
           name="q"
           placeholder="Search the web without being tracked"
+          aria-label="Search the web without being tracked"
         />
-        <button className="search-button" type="submit">
-          <GoSearch size={"20px"} style={{ alignSelf: "center" }} />
+        <button className="search-button" type="submit" aria-label="Search">
+          <GoSearch
+            size={'20px'}
+            style={{ alignSelf: 'center' }}
+            aria-hidden="true"
+          />
         </button>
       </form>
     </div>

@@ -2,7 +2,7 @@ import { getDownloadText } from '../lib/download';
 
 const DownloadButton = () => {
   return (
-    <button className="download-button" name="download-button">
+    <button className="download-button" name="download-button" aria-label="Download DuckDuckGo" title="Download DuckDuckGo">
       <svg
         viewBox="0 0 16 16"
         fill="none"

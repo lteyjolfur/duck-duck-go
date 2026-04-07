@@ -4,14 +4,13 @@ import { FaBullhorn } from "react-icons/fa";
 
 const Header = () => {
     return (
-        <div className="header">
+        <header className="header" role="banner">
             <Dropdown>
-              <FaBullhorn/>
+              <FaBullhorn aria-label="Announcements" title="Announcements" />
             </Dropdown>
-            <HamburgerPanel></HamburgerPanel>
-        </div>
+            <HamburgerPanel />
+        </header>
     )
-
 }
 
 export {Header}
