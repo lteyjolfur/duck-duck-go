@@ -1,8 +1,8 @@
 import './App.css';
-import {Header} from './components/header.jsx'
-import {LogoHomepageLink} from './components/logo-homepage-link.jsx'
-import {Searchbar} from './components/searchbar.jsx'
-import DownloadButton from './components/download-button.jsx';
+import {Header} from './components/header'
+import {LogoHomepageLink} from './components/logo-homepage-link'
+import {Searchbar} from './components/searchbar'
+import DownloadButton from './components/download-button';
 
 function App() {
   return (
