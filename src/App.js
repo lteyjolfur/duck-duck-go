@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import {Header} from './components/header.jsx'
 import {LogoHomepageLink} from './components/logo-homepage-link.jsx'
@@ -27,7 +26,6 @@ function App() {
       </div>
       
     </div>
-    <footer>1232</footer>
     </>
   );
 }
