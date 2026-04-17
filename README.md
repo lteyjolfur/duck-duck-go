@@ -4,6 +4,8 @@ A small frontend project inspired by DuckDuckGo’s 2023 homepage design.
 
 This app recreates the look and feel of the landing page with a minimal React + TypeScript implementation. Search queries are redirected to DuckDuckGo, so the project focuses on UI, layout, and interaction rather than building a custom search backend.
 
+![Screenshot](./public/Screenshot.png)
+
 ## Live Demo
 
 https://duck-duck-go-green.vercel.app/
@@ -85,11 +87,11 @@ npm run preview
 
 ## Possible Improvements
 
-- Improve keyboard navigation and focus states
 - Add more robust accessibility testing
-- Refine responsiveness across more screen sizes
 - Expand the recreated homepage sections
 - Add visual regression screenshots for comparison
+- Tests
+- Dark mode
 
 ## Disclaimer
 

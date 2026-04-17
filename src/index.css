@@ -39,6 +39,7 @@ button {
   transition: background-color 0.1s;
 }
 
-.search-wrapper:hover .search-button {
-  background-color: #4caf50; /* “lights up” */
+.search-button:hover {
+  background-color: rgb(41, 80, 191);
+  color: #fff;
 }

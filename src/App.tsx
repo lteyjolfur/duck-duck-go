@@ -18,9 +18,6 @@ function App() {
           <p className="privacy-text">Privacy, simplified.</p>
         </header>
         <DownloadButton />
-        <section aria-labelledby="features-heading">
-          <h2 id="features-heading">Explore our features</h2>
-        </section>
       </div>
     </main>
   );

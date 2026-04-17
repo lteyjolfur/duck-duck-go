@@ -1,4 +1,4 @@
-import { GoSearch } from 'react-icons/go';
+import { FaSearch } from 'react-icons/fa';
 
 const Searchbar = () => {
   return (
@@ -19,7 +19,7 @@ const Searchbar = () => {
           aria-label="Search the web without being tracked"
         />
         <button className="search-button" type="submit" aria-label="Search">
-          <GoSearch
+          <FaSearch
             size={'20px'}
             style={{ alignSelf: 'center' }}
             aria-hidden="true"
