@@ -1,8 +1,18 @@
 import { getDownloadText } from '../lib/download';
 
 const DownloadButton = () => {
+  const handleClick = () => {
+    window.alert('Download functionality is not implemented yet.');
+  };
+
   return (
-    <button className="download-button" name="download-button" aria-label="Download DuckDuckGo" title="Download DuckDuckGo">
+    <button
+      className="download-button"
+      name="download-button"
+      aria-label="Download DuckDuckGo"
+      title="Download DuckDuckGo"
+      onClick={handleClick}
+    >
       <svg
         viewBox="0 0 16 16"
         fill="none"
