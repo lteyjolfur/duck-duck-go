@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# DuckDuckGo-inspired Search Homepage
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A small frontend project inspired by DuckDuckGo’s 2023 homepage design.
 
-## Available Scripts
+This app recreates the look and feel of the landing page with a minimal React + TypeScript implementation. Search queries are redirected to DuckDuckGo, so the project focuses on UI, layout, and interaction rather than building a custom search backend.
 
-In the project directory, you can run:
+## Live Demo
 
-### `npm start`
+https://duck-duck-go-green.vercel.app/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Homepage UI inspired by DuckDuckGo's 2023 design
+- Search input that redirects queries to DuckDuckGo
+- Responsive layout
+- Component-based React structure
+- Basic semantic HTML and accessibility considerations
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React
+- TypeScript
+- Vite
+- CSS
+- Vercel Analytics
 
-### `npm run build`
+## How It Works
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The app renders a simplified DuckDuckGo-inspired homepage.
+When a user submits a query, the search term is passed to DuckDuckGo and the user is redirected to the results page.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Example:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+cats -> https://duckduckgo.com/?q=cats
+```
 
-### `npm run eject`
+## Motivation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+I built this project as a frontend exercise to practice:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- recreating a recognizable real-world interface
+- working with layout, spacing, and styling details
+- structuring a small React application with reusable components
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The goal was not to build a search engine, but to recreate the homepage experience as closely as possible based on DuckDuckGo’s 2023 design.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Performance
 
-## Learn More
+Focus was placed on keeping the bundle lightweight and maintaining good accessibility and performance scores.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Lighthouse (deployed):
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Performance: 100
+- Accessibility: 96
+- Best Practices: 100
+- SEO: 100
 
-### Code Splitting
+## Scope
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This project focuses on the homepage UI only.
 
-### Analyzing the Bundle Size
+It does not include:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- a custom backend
+- search indexing
+- custom search results
+- a pixel-perfect match to DuckDuckGo's current live site
 
-### Making a Progressive Web App
+## Running Locally
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm install
+npm run dev
+```
 
-### Advanced Configuration
+Then open the local Vite development URL in your browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Build
 
-### Deployment
+```bash
+npm run build
+npm run preview
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Possible Improvements
 
-### `npm run build` fails to minify
+- Improve keyboard navigation and focus states
+- Add more robust accessibility testing
+- Refine responsiveness across more screen sizes
+- Expand the recreated homepage sections
+- Add visual regression screenshots for comparison
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Disclaimer
+
+This is an independent frontend practice project inspired by DuckDuckGo's 2023 homepage design. It is not affiliated with or endorsed by DuckDuckGo.

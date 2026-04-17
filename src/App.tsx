@@ -9,8 +9,10 @@ function App() {
     <main className="main" aria-label="Main content">
       <div className="App">
         <Header />
-        <header className="App-header" role="banner">
-          <h1 className="visually-hidden">DuckDuckGo Clone</h1>
+        <header className="App-header">
+          <h1 className="visually-hidden">
+            DuckDuckGo-inspired search homepage
+          </h1>
           <LogoHomepageLink />
           <Searchbar />
           <p className="privacy-text">Privacy, simplified.</p>
