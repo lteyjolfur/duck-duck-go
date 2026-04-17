@@ -2,6 +2,12 @@
   text-align: center;
 }
 
+button {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding-top: 4px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -10,6 +16,8 @@
 .main {
   background-color: #f7f7f7;
   flex: 1;
+  padding-left: calc((1rem / (0.9 * 16)) * 24);
+  padding-right: calc((1rem / (0.9 * 16)) * 24);
 }
 
 .dropdown-icon {
@@ -17,7 +25,6 @@
 }
 
 .download-button {
-  border: 1px solid #ccc;
   border-radius: 4px;
   color: #333;
   display: inline-block;
@@ -62,12 +69,21 @@
 }
 
 .search-wrapper {
-  padding: 0;
+  padding: 0 12px 0 12px;
   margin: 0;
   width: 100%;
   max-width: none;
-  display: block;
-  float: none;
+}
+
+@media (min-width: 768px) {
+  .search-wrapper {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: none;
+    display: block;
+    float: none;
+  }
 }
 
 .search-form {
