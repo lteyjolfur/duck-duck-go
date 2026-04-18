@@ -1,0 +1,45 @@
+/* src/styles/layout.css
+   Layout and container styles. */
+
+.App {
+  text-align: center;
+}
+
+.main {
+  background-color: #f7f7f7;
+  flex: 1;
+  padding-left: calc((1rem / (0.9 * 16)) * 24);
+  padding-right: calc((1rem / (0.9 * 16)) * 24);
+}
+
+.header {
+  background-color: #f7f7f7;
+  display: block;
+  width: 100%;
+  max-width: 1400px;
+  box-sizing: border-box;
+  padding: 23px;
+  padding-bottom: 0;
+  margin: 0 auto;
+  height: auto;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.App-header {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-image {
+  width: 200px;
+  height: 167px;
+  margin: 14px 0 40px;
+}
+
+footer {
+  margin-top: auto;
+}

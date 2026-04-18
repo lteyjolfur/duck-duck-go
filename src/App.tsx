@@ -1,4 +1,4 @@
-import './App.css';
+// ...existing code...
 import { Header } from './components/header';
 import { LogoHomepageLink } from './components/logo-homepage-link';
 import { Searchbar } from './components/searchbar';

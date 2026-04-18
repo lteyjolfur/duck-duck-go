@@ -4,6 +4,8 @@ A small frontend project inspired by DuckDuckGo’s 2023 homepage design.
 
 This app recreates the look and feel of the landing page with a minimal React + TypeScript implementation. Search queries are redirected to DuckDuckGo, so the project focuses on UI, layout, and interaction rather than building a custom search backend.
 
+## Preview
+
 ![Screenshot](./public/Screenshot.png)
 
 ## Live Demo

@@ -1,0 +1,6 @@
+/* src/styles/utilities.css
+   Utility classes for common helpers. */
+
+.visually-hidden {
+  display: none;
+}

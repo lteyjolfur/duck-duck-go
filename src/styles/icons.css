@@ -1,0 +1,11 @@
+/* src/styles/icons.css
+   Styles for icon elements. */
+
+.dropdown-icon {
+  color: #aaa;
+}
+
+.hamburger-icon {
+  color: #aaa;
+  margin-left: 20px;
+}
