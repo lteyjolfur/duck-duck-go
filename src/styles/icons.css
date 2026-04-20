@@ -2,9 +2,9 @@
    Styles for icon elements. */
 
 .dropdown-icon {
-  color: var(--icon);
+  color: var(--icon-primary);
 }
 
 .hamburger-icon {
-  color: var(--icon);
+  color: var(--icon-primary);
 }

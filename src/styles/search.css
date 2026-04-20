@@ -56,7 +56,7 @@
 }
 
 .search-input::placeholder {
-  color: var(--placeholder-color);
+  color: var(--fg-placeholder);
 }
 
 .search-button {
