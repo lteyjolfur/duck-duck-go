@@ -2,22 +2,24 @@
    Shared component styles (buttons, forms, etc). */
 
 button {
-  border: 1px solid #ccc;
+  border: 1px solid;
+  border-color: var(--border);
   border-radius: 4px;
   padding-top: 4px;
   cursor: pointer;
+  background-color: var(--search-bg);
+  color: var(--search-text);
 }
 
 .download-button {
   border-radius: 4px;
-  color: #333;
   display: inline-block;
   font-size: 1.1em;
   font-weight: bold;
   margin: 0 0 0 10px;
   padding: 10px 20px;
   text-decoration: none;
-  text-shadow: 0 1px 0 #fff;
+  /* text-shadow: 0 1px 0 #fff; */
   white-space: nowrap;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   cursor: pointer;
@@ -27,29 +29,6 @@ button {
   margin-right: 0.5rem;
 }
 
-.search-button {
-  transition: background-color 0.1s;
-  text-align: center;
-  border-radius: 0 4px 4px 0;
-  display: inline-flex;
-  min-width: 26px;
-  border: none;
-  color: #999;
-  font-size: 1.25em;
-  padding: 0 0.64em;
-  height: auto;
-  min-height: 1.8em;
-  margin-top: -1px;
-  margin-bottom: -1px;
-  margin-right: -3px;
-  line-height: 1.5;
-  background-color: transparent;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  -webkit-font-smoothing: subpixel-antialiased;
-}
-
-.search-button:hover {
-  background-color: rgb(41, 80, 191);
-  color: #fff;
+.moon {
+  color: var(--search-text);
 }

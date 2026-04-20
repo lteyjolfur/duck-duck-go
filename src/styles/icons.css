@@ -2,10 +2,10 @@
    Styles for icon elements. */
 
 .dropdown-icon {
-  color: #aaa;
+  color: var(--icon);
 }
 
 .hamburger-icon {
-  color: #aaa;
+  color: var(--icon);
   margin-left: 20px;
 }

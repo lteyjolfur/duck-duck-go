@@ -1,6 +1,47 @@
 /* src/styles/global.css
    Global resets, font-face, and base styles. */
 
+:root {
+  --bg: #f7f7f7;
+  --text: #000000;
+  --icon: #aaa;
+  --search-bg: #fff;
+  --search-text: #333;
+  --border: #ccc;
+}
+
+/* System preference (default behavior) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #222222;
+    --text: #f5f5f5;
+    --search-bg: #333333;
+    --search-text: #eeeeee;
+    --placeholder-color: rgba(255, 255, 255, 0.54);
+    --border: #444;
+  }
+}
+
+/* Manual override */
+body[data-theme='light'] {
+  --bg: #f7f7f7;
+  --text: #000000;
+  --icon: #aaa;
+  --search-bg: #fff;
+  --search-text: #aaa;
+  --placeholder-color: rgba(0, 0, 0, 0.54);
+  --border: #ccc;
+}
+
+body[data-theme='dark'] {
+  --bg: #222222;
+  --text: #f5f5f5;
+  --search-bg: #333333;
+  --search-text: #eeeeee;
+  --placeholder-color: rgba(255, 255, 255, 0.54);
+  --border: #444;
+}
+
 @font-face {
   font-family: 'Metropolis Regular';
   src: url('/true-type/Metropolis-Regular.ttf') format('truetype');
@@ -28,7 +69,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f7f7f7;
+  background-color: var(--bg);
+  color: var(--text);
   display: flex;
   flex-direction: column;
 }
