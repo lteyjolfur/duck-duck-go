@@ -19,6 +19,7 @@ https://duck-duck-go-green.vercel.app/
 - Responsive layout
 - Component-based React structure
 - Basic semantic HTML and accessibility considerations
+- Built-in dark mode toggle (auto-detects system preference and allows manual switching)
 
 ## Tech Stack
 
@@ -93,7 +94,10 @@ npm run preview
 - Expand the recreated homepage sections
 - Add visual regression screenshots for comparison
 - Tests
-- Dark mode
+
+## Dark Mode
+
+The app supports dark mode out of the box. It automatically detects your system preference and applies the appropriate theme. You can also manually toggle between light and dark mode using the sun/moon button in the header. Theme preference is applied instantly and updates the UI colors accordingly.
 
 ## Disclaimer
 

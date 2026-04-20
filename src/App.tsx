@@ -1,28 +1,22 @@
-// ...existing code...
-import { Header } from './components/header';
-import { LogoHomepageLink } from './components/logo-homepage-link';
-import { Searchbar } from './components/searchbar';
-import DownloadButton from './components/download-button';
+import { Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './providers/theme-provider';
+import { Header } from './components/header';
+import Home from './pages/home';
+import AboutPage from './pages/about';
 
 function App() {
   return (
-    <main className="main" aria-label="Main content">
-      <ThemeProvider>
+    <ThemeProvider>
+      <main className="main" aria-label="Main content">
         <div className="App">
           <Header />
-          <header className="App-header">
-            <h1 className="visually-hidden">
-              DuckDuckGo-inspired search homepage
-            </h1>
-            <LogoHomepageLink />
-            <Searchbar />
-            <p className="privacy-text">Privacy, simplified.</p>
-          </header>
-          <DownloadButton />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutPage />} />
+          </Routes>
         </div>
-      </ThemeProvider>
-    </main>
+      </main>
+    </ThemeProvider>
   );
 }
 
