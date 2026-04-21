@@ -1,4 +1,4 @@
-import { getDownloadText } from '../lib/download';
+import { getDownloadText } from '../../lib/download';
 import DownloadIcon from './download-icon';
 
 const DownloadButton = () => {

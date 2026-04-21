@@ -1,6 +1,6 @@
 import { LogoHomepageLink } from '../components/logo-homepage-link';
 import { Searchbar } from '../components/searchbar';
-import DownloadButton from '../components/download-button';
+import DownloadButton from '../components/download-button/download-button';
 
 export default function Home() {
   return (

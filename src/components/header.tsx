@@ -1,4 +1,4 @@
-import { HamburgerPanel } from './hamburger-panel';
+import { HamburgerPanel } from './drawer/hamburger-panel';
 import { Dropdown } from './dropdown';
 import { FaBullhorn } from 'react-icons/fa';
 import DarkmodeSwitch from './darkmode-switch';
