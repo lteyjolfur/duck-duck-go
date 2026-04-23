@@ -7,6 +7,7 @@ This app recreates the look and feel of the landing page with a minimal React + 
 ## Preview
 
 ![Screenshot](./public/Screenshot.png)
+![Screenshot](./public/Screenshot-light.png)
 
 ## Live Demo
 
