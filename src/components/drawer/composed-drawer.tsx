@@ -54,7 +54,7 @@ export default function ComposedDrawer({
 
         <a
           className="drawer-link"
-          href="https://github.com/lteyjolfur/duckduckgo-hompage-react"
+          href="https://github.com/lteyjolfur/duckduckgo-homepage-react"
           target="_blank"
           rel="noreferrer"
           onClick={onClose}
