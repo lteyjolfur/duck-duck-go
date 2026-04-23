@@ -1,21 +1,22 @@
 import logo_homepage from '../logo/logo_homepage.normal.v108.svg';
 import logo_dark from '../logo/logo_homepage.alt.v109.svg';
-import { useEffect, useState } from 'react';
+import { useThemeContext } from '../providers/theme-provider';
 
 const LogoHomepageLink = () => {
-  const [theme, setTheme] = useState<'light' | 'dark'>('light');
+  const { theme } = useThemeContext();
 
-  useEffect(() => {
-    const current =
-      document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light';
-    setTheme(current);
-  }, []);
+  const isDark = theme === 'dark';
 
   return (
-    <a href="/" aria-label="DuckDuckGo Home">
+    <a
+      href="/about"
+      aria-label="DuckDuckGo Home"
+      tabIndex={-1}
+      aria-hidden="true"
+    >
       <img
         className="logo-image"
-        src={theme === 'dark' ? logo_dark : logo_homepage}
+        src={isDark ? logo_dark : logo_homepage}
         alt="DuckDuckGo logo"
       />
     </a>
