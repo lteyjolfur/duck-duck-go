@@ -1,4 +1,5 @@
 import '../styles/about.css';
+import Card from '../components/card';
 
 type AboutPageProps = {
   githubUrl?: string;
@@ -11,7 +12,7 @@ export default function AboutPage({
 }: AboutPageProps) {
   return (
     <main className="about-page">
-      <section className="about-card" aria-labelledby="about-title">
+      <Card aria-labelledby="about-title">
         <p className="about-eyebrow">About this project</p>
         <h1 id="about-title">DuckDuckGo-inspired Search Homepage</h1>
 
@@ -129,7 +130,7 @@ export default function AboutPage({
             endorsed by DuckDuckGo.
           </p>
         </section>
-      </section>
+      </Card>
     </main>
   );
 }

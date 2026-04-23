@@ -9,12 +9,15 @@ import './styles/search.css';
 import './styles/icons.css';
 import './styles/utilities.css';
 import App from './App';
+import ErrorBoundary from './components/ErrorBoundary';
 
 const root = createRoot(document.getElementById('root')!);
 root.render(
   <StrictMode>
     <BrowserRouter>
-      <App />
+      <ErrorBoundary>
+        <App />
+      </ErrorBoundary>
       <Analytics />
     </BrowserRouter>
   </StrictMode>

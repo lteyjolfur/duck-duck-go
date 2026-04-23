@@ -33,7 +33,7 @@
   display: flex;
   position: relative;
   height: 2.8em;
-  background-color: var(--search-bg);
+  background-color: var(--bg-secondary);
   border: 1px solid rgba(0, 0, 0, 0.15);
   box-shadow: 0 2px 3px rgb(0 0 0 / 6%);
 }
@@ -52,7 +52,7 @@
   z-index: 1;
   position: relative;
   top: -1px;
-  color: var(--search-text);
+  color: var(--bg-secondary);
 }
 
 .search-input::placeholder {
