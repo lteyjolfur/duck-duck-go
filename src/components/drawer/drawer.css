@@ -40,8 +40,14 @@
   border-left: 1px solid rgba(255, 255, 255, 0.08);
   overflow-y: auto;
   outline: none;
+  transform: translateX(100%);
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* When drawer is open, add a class to slide it in */
+.drawer-panel.open {
+  transform: translateX(0);
+}
 .drawer-header {
   display: flex;
   align-items: flex-start;

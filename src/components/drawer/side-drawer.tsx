@@ -4,6 +4,7 @@ import {
   useEffect,
   useId,
   useRef,
+  useState,
 } from 'react';
 import { createPortal } from 'react-dom';
 
@@ -19,8 +20,25 @@ export default function SideDrawer({
   title = 'Navigation menu',
   children,
 }: SideDrawerProps) {
+  // Track if the drawer should be mounted for animation
+  const [shouldRender, setShouldRender] = useState(open);
+  // Track if the open class should be applied for animation
+  const [animateOpen, setAnimateOpen] = useState(false);
   const drawerRef = useRef<HTMLElement | null>(null);
   const titleId = useId();
+
+  useEffect(() => {
+    if (open) {
+      setShouldRender(true);
+      // Wait for next tick to add open class for transition
+      setTimeout(() => setAnimateOpen(true), 10);
+    } else {
+      setAnimateOpen(false);
+      // Wait for the transition to finish before unmounting
+      const timeout = setTimeout(() => setShouldRender(false), 500);
+      return () => clearTimeout(timeout);
+    }
+  }, [open]);
 
   useEffect(() => {
     if (!open) return;
@@ -80,7 +98,7 @@ export default function SideDrawer({
     }
   };
 
-  if (!open) return null;
+  if (!shouldRender) return null;
 
   return createPortal(
     <div className="drawer-root" aria-hidden={!open}>
@@ -88,7 +106,7 @@ export default function SideDrawer({
 
       <aside
         ref={drawerRef}
-        className="drawer-panel"
+        className={`drawer-panel${animateOpen ? ' open' : ''}`}
         role="dialog"
         aria-modal="true"
         aria-labelledby={titleId}
