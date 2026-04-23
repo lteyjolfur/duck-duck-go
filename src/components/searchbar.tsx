@@ -12,6 +12,7 @@ const Searchbar = () => {
       >
         <input
           id="search-input"
+          autoFocus
           className="search-input"
           type="text"
           name="q"
